@@ -1,0 +1,5 @@
+rootProject.name = 'homegrownkafka'
+include 'rest'
+include 'contract'
+include 'impl'
+

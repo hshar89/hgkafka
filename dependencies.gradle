@@ -1,0 +1,14 @@
+ext {
+    versions = [
+            "springBootWeb"  : "2.6.4",
+           // "springSwaggerUI": "2.9.2",
+            //"springfox"      : "3.0.0"
+            "jackson": "2.13.1"
+    ]
+    libs = [
+            springBootWeb    : "org.springframework.boot:spring-boot-starter-web:$versions.springBootWeb",
+            //springfox      : "io.springfox:springfox-boot-starter:$versions.springfox",
+            //springSwaggerUI: "io.springfox:springfox-swagger-ui:$versions.springSwaggerUI"
+            jackson: "com.fasterxml.jackson.core:jackson-core:$versions.jackson"
+    ]
+}

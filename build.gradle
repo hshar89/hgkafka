@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'com.learning'
+version '1.0-SNAPSHOT'
+
+allprojects {
+    apply from: "$rootDir/dependencies.gradle"
+    apply plugin: 'project-report'
+    apply plugin: 'java'
+    apply plugin: 'maven-publish'
+
+    group = projectName
+    version = projectVersion
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+
+
+test {
+    useJUnitPlatform()
+}

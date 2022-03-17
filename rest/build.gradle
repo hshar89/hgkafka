@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'com.learning'
+version '1.0-SNAPSHOT'
+
+dependencies {
+    implementation(
+            project(":contract"),
+            project(":impl"),
+            libs.springBootWeb,
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
